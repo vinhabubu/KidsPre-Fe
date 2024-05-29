@@ -1,0 +1,167 @@
+.caption {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 60%;
+  transform: translateY(-50%);
+  &.caption-left {
+    left: 0;
+  }
+  .box-caption {
+    width: 400px;
+    .title {
+      font-size: 55px;
+    }
+    .sub-title {
+      font-size: 55px;
+    }
+    .desc {
+      font-size: 20px;
+    }
+  }
+}
+#welcome {
+  background: #fff2e5;
+}
+.text-welcome {
+  font-size: 20px;
+}
+
+.social {
+  height: 250px;
+  background-image: url("../../assets/images/yellow_pattern.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: repeat;
+  padding: 20px;
+
+  .icon-social {
+    border-radius: 100px;
+    padding: 16px;
+    border: 2px dashed !important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+// content lesson
+#content-lesson {
+  background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #fcbfc1 51.55%,
+    #fc8a51 73%
+  );
+  .card {
+    &.card-radius {
+      border-radius: 40px 40px 40px 5px;
+      .card-header {
+        background: linear-gradient(180deg, #ffe300 -20%, #ff651a 80%);
+        border-radius: 40px 40px 0 0;
+        .card-img-top {
+          margin-top: -50px;
+          width: 90%;
+        }
+      }
+      .card-body {
+        background-color: #ffe300;
+        border-radius: 0 0 40px 5px;
+      }
+      .card-title {
+        color: #ab0033;
+      }
+      .card-text {
+        font-size: 18px;
+      }
+    }
+  }
+}
+//  ontent-quiz{
+#content-quiz {
+  background: linear-gradient(
+    286.37deg,
+    #ffe1bc 29.63%,
+    #fcbfc1 51.55%,
+    #fc8a51 73%
+  );
+  .card {
+    background: #ffe300;
+    .card-title {
+      color: #ab0033;
+    }
+    &.card-radius {
+      border-radius: 5px 50px;
+    }
+  }
+}
+
+.custom-text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .caption {
+    .box-caption {
+      width: 350px;
+      .title {
+        font-size: 48px;
+      }
+      .sub-title {
+        font-size: 48px;
+      }
+      .desc {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .caption {
+    .box-caption {
+      width: 300px;
+      .title {
+        font-size: 32px;
+      }
+      .sub-title {
+        font-size: 32px;
+      }
+      .desc {
+        font-size: 16px;
+      }
+    }
+  }
+  .text-welcome {
+    font-size: 16px;
+  }
+  #content-quiz {
+    .card-img-top {
+      margin-bottom: -20%;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .caption {
+    width: 100vw;
+    text-align: center;
+    .box-caption {
+      .title {
+        font-size: 25px;
+      }
+      .sub-title {
+        font-size: 25px;
+      }
+      .desc {
+        font-size: 14px;
+      }
+    }
+  }
+}

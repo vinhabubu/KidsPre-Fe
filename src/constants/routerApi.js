@@ -1,0 +1,44 @@
+export const ENDPOINT = {
+  LOGIN: "/login",
+  REGISTER: "/register",
+  // ======user======
+  LIST_USER: "user/search",
+  ADD_USER: "user/create",
+  EDIT_USER: "user/",
+  ACTIVE_USER: "user/active/",
+  DETAIL_USER: "user/",
+  UPDATE_DETAIL_USER: "user/detail/",
+  // ======topic======
+  LIST_TOPIC: "topic/search",
+  ADD_TOPIC: "topic/create",
+  EDIT_TOPIC: "topic/",
+  DELETE_TOPIC: "topic/",
+  // ======category======
+  LIST_CATEGORY: "category/search",
+  ADD_CATEGORY: "category/create",
+  EDIT_CATEGORY: "category/",
+  DELETE_CATEGORY: "category/",
+  // ======lesson======
+  LIST_LESSON: "lesson/search",
+  ADD_LESSON: "lesson/create",
+  EDIT_LESSON: "lesson/",
+  DELETE_LESSON: "lesson/",
+  // ======question======
+  LIST_QUESTION: "question/search",
+  ADD_QUESTION: "question/create",
+  EDIT_QUESTION: "question/",
+  DELETE_QUESTION: "question/",
+  // ======Quiz======
+  LIST_QUIZ: "quiz/search",
+  ADD_QUIZ: "quiz/create",
+  EDIT_QUIZ: "quiz/",
+  DELETE_QUIZ: "quiz/",
+  DETAIL_QUIZ: "quiz/",
+  SUBMIT_QUIZ: "quiz/check",
+  RANK_QUIZ: "quiz/rankquizz/",
+  HISTORY_QUIZ: "quiz/history/",
+
+  DASHBOARD: "/dashboard",
+  STATIC_QUIZ: "/staticquizz",
+  STATIC_RANK: "/staticrank",
+};

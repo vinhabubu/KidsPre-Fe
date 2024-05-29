@@ -1,0 +1,94 @@
+#section-start_quiz {
+  background: #fff2e5;
+}
+
+.box-quiz {
+  background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #ffcfd1 51.55%,
+    #f3c6f1 90.85%
+  );
+  // background-image: url("../../../assets/images/yellow_pattern.jpg");
+  // background-size: contain;
+  // background-position: center center;
+  // background-repeat: repeat;
+
+  border: 4px solid red;
+  border-radius: 50px 0 50px 0;
+  .box-countdown {
+    background: #ab0033;
+    color: #ffe300;
+    width: 200px;
+    padding: 8px;
+    border-radius: 24px 0 24px 0;
+  }
+
+  .card,
+  .box-answer {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .card {
+    border-radius: 24px 0 24px 0;
+    background: #ab0033;
+    color: #ffe300;
+  }
+  .box-answer {
+    .form-check {
+      cursor: pointer;
+      border: 2px solid #ab0033;
+      box-sizing: border-box;
+      background: #fae75a;
+      color: #ab0033;
+      border-radius: 12px 0 12px 0;
+      transition: 0.3s;
+      &.active,
+      &:hover {
+        background: #ab0033;
+        color: #ffe300;
+      }
+    }
+    &.none-hover {
+      .form-check {
+        cursor: unset;
+        &:hover {
+          background: #ffe300;
+          color: #ab0033;
+        }
+        &.false {
+          &.active {
+            &:hover {
+              background: #ab0033;
+              color: #ffe300;
+            }
+          }
+        }
+        &.exact {
+          border-color: #006300;
+          &.active {
+            background-color: #90f590;
+            color: #ab0033;
+          }
+        }
+      }
+    }
+  }
+  .text-answer {
+    &.exact {
+      border-color: #006300;
+      background-color: #90f590;
+    }
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #ab0033;
+    }
+    border: 2px solid #ab0033;
+    border-radius: 0 24px 0 24px;
+    background: #fae75a;
+    color: #ab0033;
+  }
+}

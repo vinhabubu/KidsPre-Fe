@@ -1,0 +1,65 @@
+#section-topic {
+  background: #fff2e5;
+  .bg-image {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    border-radius: 50px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card {
+    margin-top: 50px;
+    margin-left: -50px;
+    .card-title {
+      color: #ab0033;
+    }
+  }
+  .card-radius {
+    border-radius: 50px;
+  }
+}
+
+#section-lesson {
+  background: #fff2e5;
+}
+.lesson-card {
+  overflow: hidden;
+  border-radius: 50px 0 50px 0;
+}
+#lesson-card {
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+  border: 2px solid transparent;
+  border-radius: 20px 0 20px 0;
+
+  &.active,
+  &:hover {
+    border: 2px solid #ab0033;
+  }
+  .card-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #section-topic {
+    background: #fff2e5;
+    .bg-image {
+      max-width: 100%;
+      border-radius: 50px 50px 0 0;
+    }
+    .card {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .card-radius {
+      border-radius: 0 0 50px 50px;
+    }
+  }
+}
